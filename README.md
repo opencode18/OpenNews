@@ -27,7 +27,7 @@ Vue JS is used to fetch JSON through the API and the resulting data is stored in
 
 # How to Contribute ? 
 
-:warning: Kindly read this if you are trying to contribute 
+### :warning: Kindly read this if you are trying to contribute 
 <br>
 As of now the webpage is in the intial stage and has a lot of development to undergo. So a lot of contributions are expected. The website has a lot of issues which are listed in the **Issue** section of the repository. Currently, only a brief heading of the issue is provided and that's not sufficient for you to solve the issue. So those who want to solve a particular issue follow these steps : 
 
@@ -47,7 +47,7 @@ Finally, when sending the pull request kindly follow this pattern :
 
 PR's that are good enough and satisfying will be merged. 
 
-:warning: Reminder : Comment on the Issues so that I can provide you with proper description and screenshots !.
+### :warning: Reminder : Comment on the Issues so that I can provide you with proper description and screenshots !.
 
 Good luck contributing ! :smiley: 
 
