@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>OpenNews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+         <!-- heading -->
+         
+            
+          
+        <div class="container" id="app" style=" width :100%;">
+          <div class="heading">
+            <center><b>OpenNews</b></center>
+           <center> <div class="under"></div></center>
+          </div>
+          <!-- Card -->
+          
+        <div class="row">
+            <h1><b>TechRadar</b></h1>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="techradar[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[0].title}}</b><br><div class="name">{{techradar[0].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{techradar[0].author}}
+                  <br>
+                  {{techradar[0].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{techradar[0].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="techradar[0].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="techradar[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[1].title}}</b><br><div class="name">{{techradar[1].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{techradar[1].author}}
+                  <br>
+                  {{techradar[1].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{techradar[1].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="techradar[1].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="techradar[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[2].title}}</b><br><div class="name">{{techradar[2].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{techradar[2].author}}
+                  <br>
+                  {{techradar[2].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{techradar[2].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="techradar[2].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="techradar[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[3].title}}</b><br><div class="name">{{techradar[3].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{techradar[3].author}}
+                  <br>
+                  {{techradar[3].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{techradar[3].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="techradar[3].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="techradar[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[4].title}}</b><br><div class="name">{{techradar[4].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{techradar[4].author}}
+                  <br>
+                  {{techradar[4].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{techradar[4].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="techradar[4].url" target="_blank">Read more</a></button></center>
+                </div>
+          </div>
+          <div class="row">
+              <h1 ><b>The Verge</b></h1>
+              <div class="card">
+                  <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="crypto[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[0].title}}</b><br><div class="name">{{crypto[0].source.name}}</div></div></div>
+                  <div class="back">
+                    <div class="author">
+                    {{crypto[0].author}}
+                    <br>
+                    {{crypto[0].publishedAt}}
+                    <br>
+                    <br>
+                  </div>
+                    <b>{{crypto[0].description}}</b>
+                    <br>
+                    <br>
+                    <center><button type="button" class="btn btn-success"><a :href="crypto[0].url" target="_blank">Read more</a></button></center>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="crypto[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[1].title}}</b><br><div class="name">{{crypto[1].source.name}}</div></div></div>
+                  <div class="back">
+                    <div class="author">
+                    {{crypto[1].author}}
+                    <br>
+                    {{crypto[1].publishedAt}}
+                    <br>
+                    <br>
+                  </div>
+                    <b>{{crypto[1].description}}</b>
+                    <br>
+                    <br>
+                    <center><button type="button" class="btn btn-success"><a :href="crypto[1].url" target="_blank">Read more</a></button></center>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="crypto[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[2].title}}</b><br><div class="name">{{crypto[2].source.name}}</div></div></div>
+                  <div class="back">
+                    <div class="author">
+                    {{crypto[2].author}}
+                    <br>
+                    {{crypto[2].publishedAt}}
+                    <br>
+                    <br>
+                  </div>
+                    <b>{{crypto[2].description}}</b>
+                    <br>
+                    <br>
+                    <center><button type="button" class="btn btn-success"><a :href="crypto[2].url" target="_blank">Read more</a></button></center>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="crypto[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[3].title}}</b><br><div class="name">{{crypto[3].source.name}}</div></div></div>
+                  <div class="back">
+                    <div class="author">
+                    {{crypto[3].author}}
+                    <br>
+                    {{crypto[3].publishedAt}}
+                    <br>
+                    <br>
+                  </div>
+                    <b>{{crypto[3].description}}</b>
+                    <br>
+                    <br>
+                    <center><button type="button" class="btn btn-success"><a :href="crypto[3].url" target="_blank">Read more</a></button></center>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="crypto[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[4].title}}</b><br><div class="name">{{crypto[4].source.name}}</div></div></div>
+                  <div class="back">
+                    <div class="author">
+                    {{crypto[4].author}}
+                    <br>
+                    {{crypto[4].publishedAt}}
+                    <br>
+                    <br>
+                  </div>
+                    <b>{{crypto[4].description}}</b>
+                    <br>
+                    <br>
+                    <center><button type="button" class="btn btn-success"><a :href="crypto[4].url" target="_blank">Read more</a></button></center>
+                  </div>
+            </div>
+            <div class="row">
+                <h1><b>Hacker News</b></h1>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="hackers[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[0].title}}</b><br><div class="name">{{hackers[0].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{hackers[0].author}}
+                  <br>
+                  {{hackers[0].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{hackers[0].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="hackers[0].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="hackers[5].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[5].title}}</b><br><div class="name">{{hackers[5].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{hackers[5].author}}
+                  <br>
+                  {{hackers[5].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{hackers[5].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="hackers[5].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="hackers[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[2].title}}</b><br><div class="name">{{hackers[2].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{hackers[2].author}}
+                  <br>
+                  {{hackers[2].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{hackers[2].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="hackers[2].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="hackers[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[3].title}}</b><br><div class="name">{{hackers[3].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{hackers[3].author}}
+                  <br>
+                  {{hackers[3].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{hackers[3].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="hackers[3].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="hackers[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[4].title}}</b><br><div class="name">{{hackers[4].source.name}}</div></div></div>
+                <div class="back">
+                  <div class="author">
+                  {{hackers[4].author}}
+                  <br>
+                  {{hackers[4].publishedAt}}
+                  <br>
+                  <br>
+                </div>
+                  <b>{{hackers[4].description}}</b>
+                  <br>
+                  <br>
+                  <center><button type="button" class="btn btn-success"><a :href="hackers[4].url" target="_blank">Read more</a></button></center>
+                </div>
+            </div>
+          </div>
+            <div class="row">
+                <h1><b>Recode</b></h1>
+                <div class="card">
+                    <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="recode[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[0].title}}</b><br><div class="name">{{recode[0].source.name}}</div></div></div>
+                    <div class="back">
+                      <div class="author">
+                      {{recode[0].author}}
+                      <br>
+                      {{recode[0].publishedAt}}
+                      <br>
+                      <br>
+                    </div>
+                      <b>{{recode[0].description}}</b>
+                      <br>
+                      <br>
+                      <center><button type="button" class="btn btn-success"><a :href="recode[0].url" target="_blank">Read more</a></button></center>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="recode[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[1].title}}</b><br><div class="name">{{recode[1].source.name}}</div></div></div>
+                    <div class="back">
+                      <div class="author">
+                      {{recode[1].author}}
+                      <br>
+                      {{recode[1].publishedAt}}
+                      <br>
+                      <br>
+                    </div>
+                      <b>{{recode[1].description}}</b>
+                      <br>
+                      <br>
+                      <center><button type="button" class="btn btn-success"><a :href="recode[1].url" target="_blank">Read more</a></button></center>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="recode[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[2].title}}</b><br><div class="name">{{recode[2].source.name}}</div></div></div>
+                    <div class="back">
+                      <div class="author">
+                      {{recode[2].author}}
+                      <br>
+                      {{recode[2].publishedAt}}
+                      <br>
+                      <br>
+                    </div>
+                      <b>{{recode[2].description}}</b>
+                      <br>
+                      <br>
+                      <center><button type="button" class="btn btn-success"><a :href="recode[2].url" target="_blank">Read more</a></button></center>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="recode[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[3].title}}</b><br><div class="name">{{recode[3].source.name}}</div></div></div>
+                    <div class="back">
+                      <div class="author">
+                      {{recode[3].author}}
+                      <br>
+                      {{recode[3].publishedAt}}
+                      <br>
+                      <br>
+                    </div>
+                      <b>{{recode[3].description}}</b>
+                      <br>
+                      <br>
+                      <center><button type="button" class="btn btn-success"><a :href="recode[3].url" target="_blank">Read more</a></button></center>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="recode[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[4].title}}</b><br><div class="name">{{recode[4].source.name}}</div></div></div>
+                    <div class="back">
+                      <div class="author">
+                      {{recode[4].author}}
+                      <br>
+                      {{recode[4].publishedAt}}
+                      <br>
+                      <br>
+                    </div>
+                      <b>{{recode[4].description}}</b>
+                      <br>
+                      <br>
+                      <center><button type="button" class="btn btn-success"><a :href="recode[4].url" target="_blank">Read more</a></button></center>
+                    </div>
+              </div>
+              <div class="row">
+                  <h1><b>The Next Web</b></h1>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="web[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[0].title}}</b><br><div class="name">{{web[0].source.name}}</div></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{web[0].author}}
+                        <br>
+                        {{web[0].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b>{{web[0].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="web[0].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="web[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[1].title}}</b><br><div class="name">{{web[1].source.name}}</div></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{web[1].author}}
+                        <br>
+                        {{web[1].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b>{{web[1].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="web[1].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="web[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[2].title}}</b><br><div class="name">{{web[2].source.name}}</div></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{web[2].author}}
+                        <br>
+                        {{web[2].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b>{{web[2].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="web[2].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="web[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[3].title}}</b><br><div class="name">{{web[3].source.name}}</div></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{web[3].author}}
+                        <br>
+                        {{web[3].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b>{{web[3].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="web[3].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="web[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[4].title}}</b><br><div class="name">{{web[4].source.name}}</div></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{web[4].author}}
+                        <br>
+                        {{web[4].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b>{{web[4].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="web[4].url" target="_blank">Read more</a></button></center>
+                      </div>
+                </div>
+        </div>
+</body>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    const app=new Vue({
+        el : '#app',
+        data : {
+            messages : [],
+            articles : [],
+            hackers : [],
+            crypto : [],
+            techradar : [],
+            web : []
+        },
+        created() {
+          fetch('https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=c4df6c22455b4179861eb40cd6e02aba')
+        .then(response => response.json() )
+        .then(json => {
+            this.hackers = json.articles
+        })
+        
+        fetch('https://newsapi.org/v2/top-headlines?sources=techradar&apiKey=c4df6c22455b4179861eb40cd6e02aba')
+        .then(response => response.json() )
+        .then(json => {
+            this.techradar = json.articles
+        })
+
+        fetch('https://newsapi.org/v2/top-headlines?sources=the-verge&apiKey=c4df6c22455b4179861eb40cd6e02aba')
+        .then(response => response.json() )
+        .then(json => {
+            this.crypto = json.articles
+        })
+
+        fetch('https://newsapi.org/v2/top-headlines?sources=recode&apiKey=c4df6c22455b4179861eb40cd6e02aba')
+        .then(response => response.json() )
+        .then(json => {
+            this.recode = json.articles
+        })
+      
+      fetch('https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=c4df6c22455b4179861eb40cd6e02aba')
+        .then(response => response.json() )
+        .then(json => {
+            this.web = json.articles
+        })
+      }
+    })
+</script>
+
+</html>
