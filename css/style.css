@@ -14,8 +14,8 @@ body {
      /* structure css code */
 
    .card {
-  width: 260px;
-  height: 320px;
+  width: 240px;
+  height: 300px;
   position: relative;
   border-radius: 18px;
   margin-left: 10px;
@@ -39,7 +39,7 @@ body {
 }
 .card .front .image  {
  border-radius: 18px;
-height : 180px;
+height : 160px;
 
 }
 .card .front .desc  {
@@ -49,7 +49,7 @@ text-align: left;
 color : #fff;
 border-radius: 18px;
 background: #232b2b;
-font-size: 15px;
+font-size: 10px;
 
 }
    .card .back {
@@ -83,7 +83,7 @@ font-size: 15px;
 
 .heading {
  color : rgb(255, 255, 255);
- font-size : 80px;
+ font-size : 60px;
  
 }
 .under {
