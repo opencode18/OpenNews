@@ -14,8 +14,8 @@ body {
      /* structure css code */
 
    .card {
-  width: 270px;
-  height: 300px;
+  width: 260px;
+  height: 320px;
   position: relative;
   border-radius: 18px;
   margin-left: 10px;
@@ -39,11 +39,11 @@ body {
 }
 .card .front .image  {
  border-radius: 18px;
-height : 200px;
+height : 180px;
 
 }
 .card .front .desc  {
-height : 100px;
+height : 140px;
 padding : 5px;
 text-align: left;
 color : #fff;
