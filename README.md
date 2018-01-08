@@ -2,6 +2,12 @@
 ---------------------------
 OpenNews is a simple website which displays the top 5 news from various News sources. The website is basically one page which is divided into several sections in which each section is used to display the top 5 news of a particular News source. Each section contains cards which displays the Image related to the news and the corresponding description.The news gets updated every once in a while to let us updated with latest news.
 
+# Screenshots
+
+![screenshots](screenshots/1.png)
+![screenshots](screenshots/2.png) ![screenshots](screenshots/3.png)
+
+
 # Features in a glance
 
 - Minimalistic Design.
@@ -29,7 +35,7 @@ Vue JS is used to fetch JSON through the API and the resulting data is stored in
 
 ### :warning: Kindly read this if you are trying to contribute 
 <br>
-As of now the webpage is in the intial stage and has a lot of development to undergo. So a lot of contributions are expected. The website has a lot of issues which are listed in the **issue** section of the repository. Currently, only a brief heading of the issue is provided and that's not sufficient for you to solve the issue. So those who want to solve a particular issue follow these steps : 
+As of now the webpage is in the intial stage and has a lot of development to `undergo. So a lot of contributions are expected. The website has a lot of issues which are listed in the ***Issue*** section of the repository. Currently, only a brief heading of the issue is provided and that's not sufficient for you to solve the issue. So those who want to solve a particular issue follow these steps : 
 
 - First of all, Comment on the issue in which you are interested in solving.
 - If the Issue is seen commented by a person saying that he/she is interested in solving that particular issue then I'll be providing the details and clues on how to solve the issue.Henceforth,assigning that person to solve the issue.
