@@ -1,0 +1,12 @@
+{
+    "mentors" : [
+        {
+            "name" : "Aswanth K",
+            "imageurl" : "mentor/aswanth.jpg",
+            "about" : "Hello I'm a web developer",
+            "facebook" : "aswanth9495",
+            "github" : "aswanth9495",
+            "twitter" : "aswanthkoleri"
+        }
+    ]
+}
