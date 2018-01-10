@@ -22,7 +22,7 @@ body {
   margin-top: 20px;
   text-align: center;
   color: #fff;
-  
+
   display : inline-block;
   cursor: pointer
 }
@@ -85,7 +85,7 @@ font-size: 12px;
 .heading {
  color : rgb(255, 255, 255);
  font-size : 60px;
- 
+
 }
 .under {
  text-align: center;
@@ -119,6 +119,15 @@ button a:hover  {
 .btn-success:focus {
    background-color:  #ee0979 ;
    border-color:  #ee0979 ;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color:  #ee0979 ;
+  border-color:  #ee0979 ;
 }
 
 .row h1 {
