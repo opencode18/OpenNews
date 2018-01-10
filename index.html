@@ -9,19 +9,39 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>OpenNews</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      #footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .give-color{
+        color:white;
+      }
+
+      .fa-heart{
+        color:#b20505;
+      }
+
+      #link-to-fossiiita{
+        color:black;
+      }
+    </style>
 </head>
 <body>
          <!-- heading -->
-         
-            
-          
+
+
+
         <div class="container" id="app" style=" width :100%;">
           <div class="heading">
             <center><b>OpenNews</b></center>
            <center> <div class="under"></div></center>
           </div>
           <!-- Card -->
-          
+
         <div class="row">
             <h1><b>TechRadar</b></h1>
             <div class="card">
@@ -434,6 +454,18 @@
                       </div>
                 </div>
         </div>
+
+        <footer id="footer">
+            <div class="container">
+              <div class="row">
+              <div class="col-md-12 give-color">
+                <p>Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://geekhaven.iiita.ac.in/foss/" target="_blank" id="link-to-fossiiita">FOSS IIITA</a></p>
+              </div>
+
+          </div>
+        </div>
+        </footer>
+
 </body>
 <script src="https://unpkg.com/vue"></script>
 <script>
@@ -453,7 +485,7 @@
         .then(json => {
             this.hackers = json.articles
         })
-        
+
         fetch('https://newsapi.org/v2/top-headlines?sources=techradar&apiKey=c4df6c22455b4179861eb40cd6e02aba')
         .then(response => response.json() )
         .then(json => {
@@ -471,7 +503,7 @@
         .then(json => {
             this.recode = json.articles
         })
-      
+
       fetch('https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=c4df6c22455b4179861eb40cd6e02aba')
         .then(response => response.json() )
         .then(json => {
