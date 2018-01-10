@@ -65,6 +65,17 @@ font-size: 12px;
    transition: transform 0.55s linear;
    font-size: 12px;
    padding: 18px;
+   overflow-wrap: break-word;
+}
+.description{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;    
+   max-height: 64px;   
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+
 }
 
    .card:hover .front {
