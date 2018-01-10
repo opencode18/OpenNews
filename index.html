@@ -28,6 +28,42 @@
       #link-to-fossiiita{
         color:black;
       }
+
+      .col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
     </style>
 </head>
 <body>
@@ -44,6 +80,8 @@
 
         <div class="row">
             <h1><b>TechRadar</b></h1>
+
+              <div class="col-md-5ths col-xs-12">
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="techradar[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[0].title}}</b></div></div>
                 <div class="back">
@@ -60,6 +98,8 @@
                   <center><button type="button" class="btn btn-success"><a :href="techradar[0].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="techradar[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[1].title}}</b></div></div>
                 <div class="back">
@@ -76,6 +116,8 @@
                   <center><button type="button" class="btn btn-success"><a :href="techradar[1].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="techradar[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[2].title}}</b></div></div>
                 <div class="back">
@@ -92,6 +134,8 @@
                   <center><button type="button" class="btn btn-success"><a :href="techradar[2].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="techradar[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[3].title}}</b></div></div>
                 <div class="back">
@@ -108,6 +152,8 @@
                   <center><button type="button" class="btn btn-success"><a :href="techradar[3].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="techradar[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[4].title}}</b></div></div>
                 <div class="back">
@@ -124,8 +170,12 @@
                   <center><button type="button" class="btn btn-success"><a :href="techradar[4].url" target="_blank">Read more</a></button></center>
                 </div>
           </div>
+        </div>
+      </div>
           <div class="row">
               <h1 ><b>The Verge</b></h1>
+              <div class="col-md-5ths col-xs-12">
+
               <div class="card">
                   <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="crypto[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[0].title}}</b></div></div>
                   <div class="back">
@@ -142,6 +192,9 @@
                     <center><button type="button" class="btn btn-success"><a :href="crypto[0].url" target="_blank">Read more</a></button></center>
                   </div>
               </div>
+            </div>
+            <div class="col-md-5ths col-xs-12">
+
               <div class="card">
                   <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="crypto[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[1].title}}</b></div></div>
                   <div class="back">
@@ -158,6 +211,9 @@
                     <center><button type="button" class="btn btn-success"><a :href="crypto[1].url" target="_blank">Read more</a></button></center>
                   </div>
               </div>
+            </div>
+            <div class="col-md-5ths col-xs-12">
+
               <div class="card">
                   <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="crypto[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[2].title}}</b></div></div>
                   <div class="back">
@@ -174,6 +230,9 @@
                     <center><button type="button" class="btn btn-success"><a :href="crypto[2].url" target="_blank">Read more</a></button></center>
                   </div>
               </div>
+            </div>
+            <div class="col-md-5ths col-xs-12">
+
               <div class="card">
                   <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="crypto[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[3].title}}</b></div></div>
                   <div class="back">
@@ -190,6 +249,9 @@
                     <center><button type="button" class="btn btn-success"><a :href="crypto[3].url" target="_blank">Read more</a></button></center>
                   </div>
               </div>
+            </div>
+            <div class="col-md-5ths col-xs-12">
+
               <div class="card">
                   <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="crypto[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[4].title}}</b></div></div>
                   <div class="back">
@@ -206,8 +268,12 @@
                     <center><button type="button" class="btn btn-success"><a :href="crypto[4].url" target="_blank">Read more</a></button></center>
                   </div>
             </div>
+          </div>
+        </div>
             <div class="row">
                 <h1><b>Hacker News</b></h1>
+                <div class="col-md-5ths col-xs-12">
+
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="hackers[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[0].title}}</b></div></div>
                 <div class="back">
@@ -224,6 +290,9 @@
                   <center><button type="button" class="btn btn-success"><a :href="hackers[0].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
+
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="hackers[5].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[5].title}}</b></div></div>
                 <div class="back">
@@ -240,6 +309,9 @@
                   <center><button type="button" class="btn btn-success"><a :href="hackers[5].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
+
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="hackers[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[2].title}}</b></div></div>
                 <div class="back">
@@ -256,6 +328,9 @@
                   <center><button type="button" class="btn btn-success"><a :href="hackers[2].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
+
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="hackers[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[3].title}}</b></div></div>
                 <div class="back">
@@ -272,6 +347,9 @@
                   <center><button type="button" class="btn btn-success"><a :href="hackers[3].url" target="_blank">Read more</a></button></center>
                 </div>
             </div>
+          </div>
+          <div class="col-md-5ths col-xs-12">
+
             <div class="card">
                 <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="hackers[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[4].title}}</b></div></div>
                 <div class="back">
@@ -289,8 +367,11 @@
                 </div>
             </div>
           </div>
+        </div>
             <div class="row">
                 <h1><b>Recode</b></h1>
+                <div class="col-md-5ths col-xs-12">
+
                 <div class="card">
                     <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="recode[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[0].title}}</b></div></div>
                     <div class="back">
@@ -307,6 +388,9 @@
                       <center><button type="button" class="btn btn-success"><a :href="recode[0].url" target="_blank">Read more</a></button></center>
                     </div>
                 </div>
+              </div>
+              <div class="col-md-5ths col-xs-12">
+
                 <div class="card">
                     <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="recode[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[1].title}}</b></div></div>
                     <div class="back">
@@ -323,6 +407,9 @@
                       <center><button type="button" class="btn btn-success"><a :href="recode[1].url" target="_blank">Read more</a></button></center>
                     </div>
                 </div>
+              </div>
+              <div class="col-md-5ths col-xs-12">
+
                 <div class="card">
                     <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="recode[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[2].title}}</b></div></div>
                     <div class="back">
@@ -339,6 +426,9 @@
                       <center><button type="button" class="btn btn-success"><a :href="recode[2].url" target="_blank">Read more</a></button></center>
                     </div>
                 </div>
+              </div>
+              <div class="col-md-5ths col-xs-12">
+
                 <div class="card">
                     <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="recode[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[3].title}}</b></div></div>
                     <div class="back">
@@ -355,6 +445,9 @@
                       <center><button type="button" class="btn btn-success"><a :href="recode[3].url" target="_blank">Read more</a></button></center>
                     </div>
                 </div>
+              </div>
+              <div class="col-md-5ths col-xs-12">
+
                 <div class="card">
                     <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="recode[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[4].title}}</b></div></div>
                     <div class="back">
@@ -371,8 +464,12 @@
                       <center><button type="button" class="btn btn-success"><a :href="recode[4].url" target="_blank">Read more</a></button></center>
                     </div>
               </div>
+            </div>
+          </div>
               <div class="row">
                   <h1><b>The Next Web</b></h1>
+                  <div class="col-md-5ths col-xs-12">
+
                   <div class="card">
                       <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="web[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[0].title}}</b></div></div>
                       <div class="back">
@@ -389,6 +486,9 @@
                         <center><button type="button" class="btn btn-success"><a :href="web[0].url" target="_blank">Read more</a></button></center>
                       </div>
                   </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
                   <div class="card">
                       <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="web[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[1].title}}</b></div></div>
                       <div class="back">
@@ -405,6 +505,9 @@
                         <center><button type="button" class="btn btn-success"><a :href="web[1].url" target="_blank">Read more</a></button></center>
                       </div>
                   </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
                   <div class="card">
                       <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="web[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[2].title}}</b></div></div>
                       <div class="back">
@@ -421,6 +524,9 @@
                         <center><button type="button" class="btn btn-success"><a :href="web[2].url" target="_blank">Read more</a></button></center>
                       </div>
                   </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
                   <div class="card">
                       <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="web[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[3].title}}</b></div></div>
                       <div class="back">
@@ -437,6 +543,9 @@
                         <center><button type="button" class="btn btn-success"><a :href="web[3].url" target="_blank">Read more</a></button></center>
                       </div>
                   </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
                   <div class="card">
                       <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="web[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[4].title}}</b></div></div>
                       <div class="back">
@@ -453,18 +562,241 @@
                         <center><button type="button" class="btn btn-success"><a :href="web[4].url" target="_blank">Read more</a></button></center>
                       </div>
                 </div>
-        </div>
-
-        <footer id="footer">
-            <div class="container">
-              <div class="row">
-              <div class="col-md-12 give-color">
-                <p>Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://geekhaven.iiita.ac.in/foss/" target="_blank" id="link-to-fossiiita">FOSS IIITA</a></p>
               </div>
+			  <div class="row">
+                  <h1><b>wired</b></h1>
+                  <div class="col-md-5ths col-xs-12">
 
-          </div>
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="wired[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[0].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{wired[0].author}}
+                        <br>
+                        {{wired[0].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{wired[0].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="wired[0].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="wired[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[1].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{wired[1].author}}
+                        <br>
+                        {{wired[1].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{wired[1].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="wired[1].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="wired[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[2].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{wired[2].author}}
+                        <br>
+                        {{wired[2].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{wired[2].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="wired[2].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="wired[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[3].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{wired[3].author}}
+                        <br>
+                        {{wired[3].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{wired[3].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="wired[3].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="wired[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[4].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{wired[4].author}}
+                        <br>
+                        {{wired[4].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{wired[4].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="wired[4].url" target="_blank">Read more</a></button></center>
+                      </div>
+                </div>
+              </div>
+			  <div class="row">
+                  <h1><b>New Scientist</b></h1>
+                  <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="new_scientist[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[0].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{new_scientist[0].author}}
+                        <br>
+                        {{new_scientist[0].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{new_scientist[0].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[0].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="new_scientist[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[1].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{new_scientist[1].author}}
+                        <br>
+                        {{new_scientist[1].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{new_scientist[1].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[1].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="new_scientist[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[2].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{new_scientist[2].author}}
+                        <br>
+                        {{new_scientist[2].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{new_scientist[2].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[2].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="new_scientist[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[3].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{new_scientist[3].author}}
+                        <br>
+                        {{new_scientist[3].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{new_scientist[3].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[3].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="new_scientist[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[4].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{new_scientist[4].author}}
+                        <br>
+                        {{new_scientist[4].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{new_scientist[4].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[4].url" target="_blank">Read more</a></button></center>
+                      </div>
+                </div>
+              </div>
+            </div>
         </div>
-        </footer>
+
+       	<footer id="footer" role="contentinfo" style="padding-bottom: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12 text-center" style="letter-spacing: 4px;">
+						<a href="https://www.facebook.com/opencodeiiita/" target="_blank"><i class="fa fa-facebook" style="font-size: 3.0em;color: black;"></i></a>
+						<a href="https://github.com/opencode18" target="_blank"><i class="fa fa-github" style="font-size: 3.0em;color: black;" aria-hidden="true"></i></a>
+						<a href="mailto:iit2016128@iiita.ac.in"><i class="fa fa-envelope" style="font-size: 3.0em; color: black;" aria-hidden="true"></i></a>
+				</div><br class="visible-xs"><br class="visible-xs">
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					<p>Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://geekhaven.iiita.ac.in/foss/" target="_blank">FOSS IIITA</a></p>
+				</div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+				<div class="col-md-4 col-sm-4 col-xs-12" style="margin-top: -25px;">
+				<div class="row">
+					<div class="col-md-4 col-sm-3 col-xs-3 col-xs-offset-2 col-md-offset-1">
+						<a href="https://github.com/fossiiita" target="_blank"><img class="img-responsive" id="foss" src="images/index.png"></a>
+					</div>
+
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<a href="https://geekhaven.iiita.ac.in/" class="visible-sm"><img style="margin-top: 20px;" src="images/Geekhaven.svg" class="img-responsive"></a>
+						<a href="https://geekhaven.iiita.ac.in/" class="hidden-sm"><img src="images/Geekhaven.svg" class="img-responsive"></a>
+
+
+					</div>
+					<div class="col-md-4 col-sm-3 col-xs-3">
+						<a href="https://www.iiita.ac.in/" target="_blank"><img src="images/index.jpeg" class="img-responsive" style="height: 50px; width: 120px" ></a>
+						</div>
+
+
+					
+				</div>
+				</div>
+				
+
+		</div>
+	</div>
+	</footer>
+
 
 </body>
 <script src="https://unpkg.com/vue"></script>
@@ -477,7 +809,9 @@
             hackers : [],
             crypto : [],
             techradar : [],
-            web : []
+            web : [],
+			wired : [],
+			new_scientist : []
         },
         created() {
           fetch('https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=c4df6c22455b4179861eb40cd6e02aba')
@@ -508,6 +842,16 @@
         .then(response => response.json() )
         .then(json => {
             this.web = json.articles
+        })
+	  fetch('https://newsapi.org/v2/everything?sources=wired&apiKey=3b8ddf82272448b78af730765191fdfa')
+        .then(response => response.json() )
+        .then(json => {
+            this.wired = json.articles
+        })
+	  fetch('https://newsapi.org/v2/top-headlines?sources=new-scientist&apiKey=3b8ddf82272448b78af730765191fdfa')
+        .then(response => response.json() )
+        .then(json => {
+            this.new_scientist = json.articles
         })
       }
     })
