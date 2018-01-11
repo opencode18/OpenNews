@@ -10,6 +10,12 @@
     <title>OpenNews</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="screenshots/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="screenshots/favicon/favicon-16x16.png">
+    <link rel="manifest" href="screenshots/favicon/manifest.json">
+    <link rel="shortcut icon" href="screenshots/favicon/favicon.ico">
 
     <style>
       #footer{
@@ -563,7 +569,8 @@
                       </div>
                 </div>
               </div>
-		<div class="row">
+            </div>
+			<div class="row">
                   <h1><b>wired</b></h1>
                   <div class="col-md-5ths col-xs-12">
 
@@ -660,7 +667,8 @@
                       </div>
                 </div>
               </div>
-			  <div class="row">
+            </div>
+			<div class="row">
                   <h1><b>New Scientist</b></h1>
                   <div class="col-md-5ths col-xs-12">
 
@@ -752,8 +760,106 @@
                       </div>
                         <b class="description">{{new_scientist[4].description}}</b>
                         <br>
-                         <br>
+                        <br>
                         <center><button type="button" class="btn btn-success"><a :href="new_scientist[4].url" target="_blank">Read more</a></button></center>
+                      </div>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+                  <h1><b>Talksport</b></h1>
+                  <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>1</b></button><div class="image"><img v-bind:src="talksport[0].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[0].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{talksport[0].author}}
+                        <br>
+                        {{talksport[0].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{talksport[0].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="talksport[0].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="talksport[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[1].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{talksport[1].author}}
+                        <br>
+                        {{talksport[1].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{talksport[1].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="talksport[1].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="talksport[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[2].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{talksport[2].author}}
+                        <br>
+                        {{talksport[2].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{talksport[2].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="talksport[2].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="talksport[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[3].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{talksport[3].author}}
+                        <br>
+                        {{talksport[3].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{talksport[3].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="talksport[3].url" target="_blank">Read more</a></button></center>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-5ths col-xs-12">
+
+                  <div class="card">
+                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="talksport[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[4].title}}</b></div></div>
+                      <div class="back">
+                        <div class="author">
+                        {{talksport[4].author}}
+                        <br>
+                        {{talksport[4].publishedAt}}
+                        <br>
+                        <br>
+                      </div>
+                        <b class="description">{{talksport[4].description}}</b>
+                        <br>
+                        <br>
+                        <center><button type="button" class="btn btn-success"><a :href="talksport[4].url" target="_blank">Read more</a></button></center>
                       </div>
                 </div>
               </div>
@@ -811,7 +917,8 @@
             techradar : [],
             web : [],
 			wired : [],
-			new_scientist : []
+			new_scientist : [],
+			talksport : []
         },
         created() {
           fetch('https://newsapi.org/v2/top-headlines?sources=hacker-news&apiKey=c4df6c22455b4179861eb40cd6e02aba')
@@ -843,7 +950,7 @@
         .then(json => {
             this.web = json.articles
         })
-	  fetch('https://newsapi.org/v2/everything?sources=wired&apiKey=3b8ddf82272448b78af730765191fdfa')
+	  fetch('https://newsapi.org/v2/top-headlines?sources=wired&apiKey=3b8ddf82272448b78af730765191fdfa')
         .then(response => response.json() )
         .then(json => {
             this.wired = json.articles
@@ -852,6 +959,11 @@
         .then(response => response.json() )
         .then(json => {
             this.new_scientist = json.articles
+        })
+	   fetch('https://newsapi.org/v2/top-headlines?sources=talksport&apiKey=3b8ddf82272448b78af730765191fdfa')
+        .then(response => response.json() )
+        .then(json => {
+            this.talksport = json.articles
         })
       }
     })
