@@ -1,5 +1,6 @@
 # OpenNews
-<img src="screenshots/logo.png" width = "500" height= "500">
+<img src="screenshots/logo.png" width = "400" height= "180">
+<br>
 OpenNews is a simple website which displays the top 5 news from various News sources. The website is basically one page which is divided into several sections in which each section is used to display the top 5 news of a particular News source. Each section contains cards which displays the Image related to the news and the corresponding description.The news gets updated every once in a while to let us updated with latest news.
 
 # Screenshots
