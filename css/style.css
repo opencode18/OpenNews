@@ -122,6 +122,11 @@ button a:hover  {
    color : #fff;
    text-decoration: none ;
 }
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover {
+    color: #fff;
+    background-color: #ee0979;
+    border-color: #ee0979;
+}
 
 .btn-success,
 .btn-success:hover,
