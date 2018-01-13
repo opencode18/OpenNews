@@ -17,6 +17,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="screenshots/favicon/favicon-16x16.png">
   <link rel="manifest" href="screenshots/favicon/manifest.json">
   <link rel="shortcut icon" href="screenshots/favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600" rel="stylesheet">
 
 </head>
 
@@ -42,16 +43,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="techradar[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{techradar[index].title}}</b></div>
+            <div class="desc"><p>{{techradar[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="tech-radar">
             <div class="author">
               {{techradar[index].author}}
               <br> {{techradar[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{techradar[index].description}}</b>
+            <p class="description">{{techradar[index].description}}</p>
             <br>
             <br>
             <center>
@@ -146,16 +147,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="crypto[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{crypto[index].title}}</b></div>
+            <div class="desc"><p>{{crypto[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="the-verge">
             <div class="author">
               {{crypto[index].author}}
               <br> {{crypto[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{crypto[index].description}}</b>
+            <p class="description">{{crypto[index].description}}</p>
             <br>
             <br>
             <center>
@@ -249,16 +250,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="hackers[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{hackers[index].title}}</b></div>
+            <div class="desc"><p>{{hackers[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="hacker-news">
             <div class="author">
               {{hackers[index].author}}
               <br> {{hackers[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{hackers[index].description}}</b>
+            <p class="description">{{hackers[index].description}}</p>
             <br>
             <br>
             <center>
@@ -352,16 +353,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="recode[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{recode[index].title}}</b></div>
+            <div class="desc"><p>{{recode[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="recode">
             <div class="author">
               {{recode[index].author}}
               <br> {{recode[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{recode[index].description}}</b>
+            <p class="description">{{recode[index].description}}</p>
             <br>
             <br>
             <center>
@@ -455,16 +456,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="web[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{web[index].title}}</b></div>
+            <div class="desc"><p>{{web[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="the-next-web">
             <div class="author">
               {{web[index].author}}
               <br> {{web[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{web[index].description}}</b>
+            <p class="description">{{web[index].description}}</p>
             <br>
             <br>
             <center>
@@ -559,16 +560,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="wired[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{wired[index].title}}</b></div>
+            <div class="desc"><p>{{wired[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="wired">
             <div class="author">
               {{wired[index].author}}
               <br> {{wired[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{wired[index].description}}</b>
+            <p class="description">{{wired[index].description}}</p>
             <br>
             <br>
             <center>
@@ -662,16 +663,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="new_scientist[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{new_scientist[index].title}}</b></div>
+            <div class="desc"><p>{{new_scientist[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="new-scientist">
             <div class="author">
               {{new_scientist[index].author}}
               <br> {{new_scientist[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{new_scientist[index].description}}</b>
+            <p class="description">{{new_scientist[index].description}}</p>
             <br>
             <br>
             <center>
@@ -765,16 +766,16 @@
           <div class="front">
             <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
             <div class="image"><img v-bind:src="talksport[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
-            <div class="desc"><b>{{talksport[index].title}}</b></div>
+            <div class="desc"><p>{{talksport[index].title}}</p></div>
           </div>
-          <div class="back">
+          <div class="back" id="talksport">
             <div class="author">
               {{talksport[index].author}}
               <br> {{talksport[index].publishedAt}}
               <br>
               <br>
             </div>
-            <b class="description">{{talksport[index].description}}</b>
+            <p class="description">{{talksport[index].description}}</p>
             <br>
             <br>
             <center>
