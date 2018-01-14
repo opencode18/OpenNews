@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Open News",
+  "description": "This will search the context in Open News",
+  "version": "1.0",
+  "background":{
+    "scripts":["background.js"]
+  },
+  "icons":{
+    "64":"logo.png",
+    "32": "logo.png",
+    "16": "logo.png",
+    "128":"logo.png"
+  },
+  
+  "permissions": [
+    "contextMenus"
+  ]
+}
