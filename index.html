@@ -861,6 +861,33 @@
                 </div>
               </div> -->
     </div>
+    <div class="row">
+      <h1><b>Buzzfeed</b></h1>
+      <div class="col-md-5ths col-xs-12" v-for="index in 5">
+
+        <div class="card" v-if="buzzfeed.length > 0">
+          <div class="front">
+            <button type="button" class="btn btn-primary"><b>{{index}}</b></button>
+            <div class="image"><img v-bind:src="buzzfeed[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
+            <div class="desc"><p>{{buzzfeed[index].title}}</p></div>
+          </div>
+          <div class="back" id="buzzfeed">
+            <div class="author">
+              {{buzzfeed[index].author}}
+              <br> {{buzzfeed[index].publishedAt}}
+              <br>
+              <br>
+            </div>
+            <p class="description">{{buzzfeed[index].description}}</p>
+            <br>
+            <br>
+            <center>
+              <button type="button" class="btn btn-success"><a :href="buzzfeed[index].url" target="_blank">Read more</a></button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer id="footer" role="contentinfo" style="padding-bottom: 30px;">
