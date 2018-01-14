@@ -312,3 +312,10 @@ button a:hover {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+#buzzfeed{
+  background: url("../images/buzzfeed.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
