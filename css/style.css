@@ -324,6 +324,7 @@ button a:hover {
   padding: 10px;
   outline: none;
   user-select: none;
+  border: none;
   border-radius: 10px 0px 0px 10px;
   background-color: #002346;
   color: white;
@@ -337,6 +338,7 @@ button a:hover {
   border-radius: 0px 10px 10px 0px;
   background-color:white;
   color: #002346;
+  border: none;
   font-weight: 600;
 }
 .st
