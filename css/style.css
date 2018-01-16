@@ -319,3 +319,39 @@ button a:hover {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+#star-box
+{ 
+  padding: 10px;
+  outline: none;
+  user-select: none;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #002346;
+  color: white;
+}
+#star
+{
+ 
+  padding: 10px;
+  outline: none;
+  user-select: none;
+  border-radius: 0px 10px 10px 0px;
+  background-color:white;
+  color: #002346;
+  border: none;
+  font-weight: 600;
+}
+.st
+{
+  position: absolute;
+  right: 20px;
+}
+@media (max-width: 420px)
+{
+  .st{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,+35%);
+    padding: 10px;
+  }
+}
