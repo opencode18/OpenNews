@@ -20,7 +20,7 @@ OpenNews is a simple website which displays the top 5 news from various News sou
 
 # How to use it
 
-Just click here : [Link](https://aswanthkoleri.github.io/OpenNews/index.html)
+Just click here : [Link](https://opencode18.github.io/OpenNews/index.html)
 
 # Stacks used 
 

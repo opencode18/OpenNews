@@ -343,4 +343,9 @@ button a:hover {
 }
 #go-top a:hover {
   background: #000000;
+#buzzfeed{
+  background: url("../images/buzzfeed.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
