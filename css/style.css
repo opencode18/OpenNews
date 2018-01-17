@@ -245,16 +245,16 @@ button a:hover {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 15px;
-  background: linear-gradient(to bottom right, #ee0979, #ff6a00);
+  background: #bbdefb;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: #232b2b;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #1565c0;
 }
 
 #tech-radar{
