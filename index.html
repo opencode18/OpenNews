@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      jQuery(window).load(function(){
+          jQuery(".hameid-loader-overlay").fadeOut(500);
+      });
+  </script>
   <title>OpenNews</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,6 +27,7 @@
 </head>
 
 <body>
+    <div class="hameid-loader-overlay"></div>
   <!-- heading -->
 
 
@@ -943,5 +949,6 @@
 <script src="https://unpkg.com/vue"></script>
 <script src="js/script.js"></script>
 <script src="js/apicall.js"></script>
+
 
 </html>
