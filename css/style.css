@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: black;
 }
 
 .jumbotron1 {
@@ -25,7 +25,7 @@ body {
   margin-left: 10px;
   margin-top: 20px;
   text-align: center;
-  color: #fff;
+  color:black;
   display: inline-block;
   cursor: pointer
 }
@@ -64,7 +64,7 @@ body {
 .card .back {
   position: absolute;
   border-radius: 18px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-bottom: 0;
   box-shadow:5px 5px 5px rgba(0,0,0,0.5);
   text-align: justify;
@@ -108,7 +108,7 @@ body {
 
 .author {
   text-align: left;
-  font-family: Nunito Sans;
+  font-family: 'Lora', serif;
   font-size: 14px;
 }
 
@@ -154,7 +154,7 @@ button a:hover {
 .open>.dropdown-toggle.btn-success.focus,
 .open>.dropdown-toggle.btn-success:focus,
 .open>.dropdown-toggle.btn-success:hover {
-  color: #fff;
+  color:red;
   background-color: #ee0979;
   border-color: #ee0979;
 }
