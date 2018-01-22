@@ -19,6 +19,7 @@
   <link rel="manifest" href="screenshots/favicon/manifest.json">
   <link rel="shortcut icon" href="screenshots/favicon/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,500,700" rel="stylesheet">
 
 </head>
 
@@ -63,98 +64,21 @@
             <div class="author">
               {{techradar[index].author}}
               <br> {{techradar[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{techradar[index].description}}</p>
-            <br>
-            <br>
-            <center>
+            
               <button type="button" class="btn btn-success"><a :href="techradar[index].url" target="_blank">Read more</a></button>
-            </center>
+           
           </div>
         </div>
       </div>
 
-      <!-- <div class="col-md-5ths col-xs-12">
-            <div class="card">
-=======
-          <div class="col-md-5ths col-xs-12">
-            <div class="card" v-if="techradar.length > 0">
->>>>>>> upstream/master
-                <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="techradar[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[1].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{techradar[1].author}}
-                  <br>
-                  {{techradar[1].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{techradar[1].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="techradar[1].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12" >
-            <div class="card" v-if="techradar.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="techradar[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[2].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{techradar[2].author}}
-                  <br>
-                  {{techradar[2].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{techradar[2].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="techradar[2].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12">
-            <div class="card" v-if="techradar.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="techradar[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[3].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{techradar[3].author}}
-                  <br>
-                  {{techradar[3].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{techradar[3].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="techradar[3].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12">
-            <div class="card" v-if="techradar.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="techradar[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{techradar[4].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{techradar[4].author}}
-                  <br>
-                  {{techradar[4].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{techradar[4].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="techradar[4].url" target="_blank">Read more</a></button></center>
-                </div>
-          </div>
-        </div> -->
+    
     </div>
+
     <div class="row">
       <h1><b>The Verge</b></h1>
+      
       <div class="col-md-5ths col-xs-12" v-for="index in 5">
 
         <div class="card" v-if="crypto.length > 0">
@@ -163,99 +87,20 @@
             <div class="image"><img v-bind:src="crypto[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
             <div class="desc"><p>{{crypto[index].title}}</p></div>
           </div>
+          
           <div class="back" id="the-verge">
             <div class="author">
               {{crypto[index].author}}
               <br> {{crypto[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{crypto[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="crypto[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="crypto[index].url" target="_blank">Read more</a></button>
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-              <div class="card" v-if="crypto.length > 0">
-                  <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="crypto[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[1].title}}</b></div></div>
-                  <div class="back">
-                    <div class="author">
-                    {{crypto[1].author}}
-                    <br>
-                    {{crypto[1].publishedAt}}
-                    <br>
-                    <br>
-                  </div>
-                    <b class="description">{{crypto[1].description}}</b>
-                    <br>
-                    <br>
-                    <center><button type="button" class="btn btn-success"><a :href="crypto[1].url" target="_blank">Read more</a></button></center>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-5ths col-xs-12">
-
-              <div class="card" v-if="crypto.length > 0">
-                  <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="crypto[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[2].title}}</b></div></div>
-                  <div class="back">
-                    <div class="author">
-                    {{crypto[2].author}}
-                    <br>
-                    {{crypto[2].publishedAt}}
-                    <br>
-                    <br>
-                  </div>
-                    <b class="description">{{crypto[2].description}}</b>
-                    <br>
-                    <br>
-                    <center><button type="button" class="btn btn-success"><a :href="crypto[2].url" target="_blank">Read more</a></button></center>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-5ths col-xs-12">
-
-              <div class="card" v-if="crypto.length > 0">
-                  <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="crypto[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[3].title}}</b></div></div>
-                  <div class="back">
-                    <div class="author">
-                    {{crypto[3].author}}
-                    <br>
-                    {{crypto[3].publishedAt}}
-                    <br>
-                    <br>
-                  </div>
-                    <b class="description">{{crypto[3].description}}</b>
-                    <br>
-                    <br>
-                    <center><button type="button" class="btn btn-success"><a :href="crypto[3].url" target="_blank">Read more</a></button></center>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-5ths col-xs-12">
-
-              <div class="card" v-if="crypto.length > 0">
-                  <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="crypto[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{crypto[4].title}}</b></div></div>
-                  <div class="back">
-                    <div class="author">
-                    {{crypto[4].author}}
-                    <br>
-                    {{crypto[4].publishedAt}}
-                    <br>
-                    <br>
-                  </div>
-                    <b class="description">{{crypto[4].description}}</b>
-                    <br>
-                    <br>
-                    <center><button type="button" class="btn btn-success"><a :href="crypto[4].url" target="_blank">Read more</a></button></center>
-                  </div>
-            </div>
-          </div> -->
     </div>
+
+
     <div class="row">
       <h1><b>Hacker News</b></h1>
       <div class="col-md-5ths col-xs-12" v-for="index in 5">
@@ -266,99 +111,19 @@
             <div class="image"><img v-bind:src="hackers[index].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';"></div>
             <div class="desc"><p>{{hackers[index].title}}</p></div>
           </div>
+
           <div class="back" id="hacker-news">
             <div class="author">
               {{hackers[index].author}}
               <br> {{hackers[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{hackers[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="hackers[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="hackers[index].url" target="_blank">Read more</a></button>
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-            <div class="card" v-if="hackers.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="hackers[5].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[5].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{hackers[5].author}}
-                  <br>
-                  {{hackers[5].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{hackers[5].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="hackers[5].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12">
-
-            <div class="card" v-if="hackers.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="hackers[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[2].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{hackers[2].author}}
-                  <br>
-                  {{hackers[2].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{hackers[2].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="hackers[2].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12">
-
-            <div class="card" v-if="hackers.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="hackers[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[3].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{hackers[3].author}}
-                  <br>
-                  {{hackers[3].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{hackers[3].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="hackers[3].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-5ths col-xs-12">
-
-            <div class="card" v-if="hackers.length > 0">
-                <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="hackers[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{hackers[4].title}}</b></div></div>
-                <div class="back">
-                  <div class="author">
-                  {{hackers[4].author}}
-                  <br>
-                  {{hackers[4].publishedAt}}
-                  <br>
-                  <br>
-                </div>
-                  <b class="description">{{hackers[4].description}}</b>
-                  <br>
-                  <br>
-                  <center><button type="button" class="btn btn-success"><a :href="hackers[4].url" target="_blank">Read more</a></button></center>
-                </div>
-            </div>
-          </div> -->
-    </div>
+     </div>
+     s
     <div class="row">
       <h1><b>Recode</b></h1>
       <div class="col-md-5ths col-xs-12" v-for="index in 5">
@@ -373,94 +138,14 @@
             <div class="author">
               {{recode[index].author}}
               <br> {{recode[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{recode[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="recode[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="recode[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-                <div class="card" v-if="recode.length > 0">
-                    <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="recode[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[1].title}}</b></div></div>
-                    <div class="back">
-                      <div class="author">
-                      {{recode[1].author}}
-                      <br>
-                      {{recode[1].publishedAt}}
-                      <br>
-                      <br>
-                    </div>
-                      <b class="description">{{recode[1].description}}</b>
-                      <br>
-                      <br>
-                      <center><button type="button" class="btn btn-success"><a :href="recode[1].url" target="_blank">Read more</a></button></center>
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-5ths col-xs-12">
-
-                <div class="card" v-if="recode.length > 0">
-                    <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="recode[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[2].title}}</b></div></div>
-                    <div class="back">
-                      <div class="author">
-                      {{recode[2].author}}
-                      <br>
-                      {{recode[2].publishedAt}}
-                      <br>
-                      <br>
-                    </div>
-                      <b class="description">{{recode[2].description}}</b>
-                      <br>
-                      <br>
-                      <center><button type="button" class="btn btn-success"><a :href="recode[2].url" target="_blank">Read more</a></button></center>
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-5ths col-xs-12">
-
-                <div class="card" v-if="recode.length > 0">
-                    <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="recode[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[3].title}}</b></div></div>
-                    <div class="back">
-                      <div class="author">
-                      {{recode[3].author}}
-                      <br>
-                      {{recode[3].publishedAt}}
-                      <br>
-                      <br>
-                    </div>
-                      <b class="description">{{recode[3].description}}</b>
-                      <br>
-                      <br>
-                      <center><button type="button" class="btn btn-success"><a :href="recode[3].url" target="_blank">Read more</a></button></center>
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-5ths col-xs-12">
-
-                <div class="card" v-if="recode.length > 0">
-                    <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="recode[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{recode[4].title}}</b></div></div>
-                    <div class="back">
-                      <div class="author">
-                      {{recode[4].author}}
-                      <br>
-                      {{recode[4].publishedAt}}
-                      <br>
-                      <br>
-                    </div>
-                      <b class="description">{{recode[4].description}}</b>
-                      <br>
-                      <br>
-                      <center><button type="button" class="btn btn-success"><a :href="recode[4].url" target="_blank">Read more</a></button></center>
-                    </div>
-              </div>
-            </div> -->
+      
     </div>
     <div class="row">
       <h1><b>The Next Web</b></h1>
@@ -476,94 +161,14 @@
             <div class="author">
               {{web[index].author}}
               <br> {{web[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{web[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="web[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="web[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="web.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="web[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[1].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{web[1].author}}
-                        <br>
-                        {{web[1].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{web[1].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="web[1].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="web.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="web[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[2].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{web[2].author}}
-                        <br>
-                        {{web[2].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{web[2].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="web[2].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="web.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="web[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[3].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{web[3].author}}
-                        <br>
-                        {{web[3].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{web[3].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="web[3].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="web.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="web[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{web[4].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{web[4].author}}
-                        <br>
-                        {{web[4].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{web[4].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="web[4].url" target="_blank">Read more</a></button></center>
-                      </div>
-                </div>
-              </div> -->
+      
     </div>
 
     <div class="row">
@@ -580,94 +185,14 @@
             <div class="author">
               {{wired[index].author}}
               <br> {{wired[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{wired[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="wired[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="wired[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="wired.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="wired[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[1].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{wired[1].author}}
-                        <br>
-                        {{wired[1].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{wired[1].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="wired[1].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="wired.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="wired[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[2].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{wired[2].author}}
-                        <br>
-                        {{wired[2].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{wired[2].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="wired[2].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="wired.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="wired[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[3].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{wired[3].author}}
-                        <br>
-                        {{wired[3].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{wired[3].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="wired[3].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="wired.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="wired[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{wired[4].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{wired[4].author}}
-                        <br>
-                        {{wired[4].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{wired[4].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="wired[4].url" target="_blank">Read more</a></button></center>
-                      </div>
-                </div>
-              </div> -->
+      
     </div>
     <div class="row">
       <h1><b>New Scientist</b></h1>
@@ -683,94 +208,14 @@
             <div class="author">
               {{new_scientist[index].author}}
               <br> {{new_scientist[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{new_scientist[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="new_scientist[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="new_scientist[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="new_scientist.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="new_scientist[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[1].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{new_scientist[1].author}}
-                        <br>
-                        {{new_scientist[1].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{new_scientist[1].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[1].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="new_scientist.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="new_scientist[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[2].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{new_scientist[2].author}}
-                        <br>
-                        {{new_scientist[2].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{new_scientist[2].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[2].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="new_scientist.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="new_scientist[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[3].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{new_scientist[3].author}}
-                        <br>
-                        {{new_scientist[3].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{new_scientist[3].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[3].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="new_scientist.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="new_scientist[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{new_scientist[4].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{new_scientist[4].author}}
-                        <br>
-                        {{new_scientist[4].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{new_scientist[4].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="new_scientist[4].url" target="_blank">Read more</a></button></center>
-                      </div>
-                </div>
-              </div> -->
+      
     </div>
     <div class="row">
       <h1><b>Talksport</b></h1>
@@ -786,94 +231,14 @@
             <div class="author">
               {{talksport[index].author}}
               <br> {{talksport[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{talksport[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="talksport[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="talksport[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="talksport.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>2</b></button><div class="image"><img v-bind:src="talksport[1].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[1].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{talksport[1].author}}
-                        <br>
-                        {{talksport[1].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{talksport[1].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="talksport[1].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="talksport.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>3</b></button><div class="image"><img v-bind:src="talksport[2].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[2].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{talksport[2].author}}
-                        <br>
-                        {{talksport[2].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{talksport[2].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="talksport[2].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="talksport.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>4</b></button><div class="image"><img v-bind:src="talksport[3].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[3].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{talksport[3].author}}
-                        <br>
-                        {{talksport[3].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{talksport[3].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="talksport[3].url" target="_blank">Read more</a></button></center>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-5ths col-xs-12">
-
-                  <div class="card" v-if="talksport.length > 0">
-                      <div class="front"><button type="button" class="btn btn-primary"><b>5</b></button><div class="image"><img v-bind:src="talksport[4].urlToImage" alt="Image not found" onerror="this.onerror=null;this.src='css/imagefound.gif';" ></div><div class="desc"><b>{{talksport[4].title}}</b></div></div>
-                      <div class="back">
-                        <div class="author">
-                        {{talksport[4].author}}
-                        <br>
-                        {{talksport[4].publishedAt}}
-                        <br>
-                        <br>
-                      </div>
-                        <b class="description">{{talksport[4].description}}</b>
-                        <br>
-                        <br>
-                        <center><button type="button" class="btn btn-success"><a :href="talksport[4].url" target="_blank">Read more</a></button></center>
-                      </div>
-                </div>
-              </div> -->
+      
     </div>
     <div class="row">
       <h1><b>Buzzfeed</b></h1>
@@ -889,15 +254,10 @@
             <div class="author">
               {{buzzfeed[index].author}}
               <br> {{buzzfeed[index].publishedAt}}
-              <br>
-              <br>
             </div>
             <p class="description">{{buzzfeed[index].description}}</p>
-            <br>
-            <br>
-            <center>
-              <button type="button" class="btn btn-success"><a :href="buzzfeed[index].url" target="_blank">Read more</a></button>
-            </center>
+            <button type="button" class="btn btn-success"><a :href="buzzfeed[index].url" target="_blank">Read more</a></button>
+            
           </div>
         </div>
       </div>
