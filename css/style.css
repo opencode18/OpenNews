@@ -25,7 +25,6 @@ body {
   width: 240px;
   height: 300px;
   position: relative;
-  border-radius: 18px;
   margin-left: 10px;
   margin-top: 20px;
   text-align: center;
@@ -36,7 +35,6 @@ body {
 
 .card .front {
   position: absolute;
-  border-radius: 20px;
   border-right: 2px solid white;
   border-top: 2px solid white;
   border-left: 2px solid white;
@@ -59,7 +57,6 @@ body {
   padding: 20px;
   
   color: #fff;
-  border-radius: 18px;
   
   
   font-family: Nunito Sans;
@@ -68,7 +65,6 @@ body {
 }
 .card .back {
   position: absolute;
-  border-radius: 18px;
   
   box-shadow:0px 0px 5px rgba(0,0,0,0.5);
   text-align: justify;
@@ -149,7 +145,6 @@ body {
   float: left;
   left: 6px;
   top: 6px;
-  border-radius:50%;
   background:rgba(255,255,255,0.3);
   
   border:2px solid white;
