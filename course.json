@@ -1,0 +1,73 @@
+{"courses" : [{
+    "code": "IITA",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "Core",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+},
+{
+    "code": "IITB",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "elective",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+},
+{
+    "code": "IITC",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "Core",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+},
+{
+    "code": "IITD",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "add-on",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+},
+{
+    "code": "IITE",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "open-elective",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+},
+{
+    "code": "IITF",
+    "title": "Introduction To Computers",
+    "l_credit": 0,
+    "p_credit": 0,
+    "t_credit": 2,
+    "seats": 60,
+    "active": true,
+    "course_type": "Core",
+    "last_updated": "2018-03-04T12:07:25.590811Z",
+    "updated_by": 1
+}]
+}
